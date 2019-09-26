@@ -1,0 +1,102 @@
+body{
+  background: #fff;
+	color: #333;
+	font-family: Lato, sans-serif;
+	background-color:#e4e4e4;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #09d3ac;
+}
+
+
+  .task-card {
+    box-shadow: 100 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 10px;
+    
+
+    display: block;
+    margin: 10px auto 100px;
+    background-color:#fff;
+    padding:0px 10px 10px 10px;
+    border-radius:10px
+  }
+  
+  .task-card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+  
+  .card-container {
+    padding: 5px 5px;
+    display: inline-block;
+    width: 350px;
+    height: 170px;
+    margin: 10px;
+  }
+
+  .task-card > div{
+    padding: 10px 10px;
+  }
+
+  .remove-btn, .edit-btn, .add-btn{
+    width:50%;
+    color:red;
+    border-radius: 5px;
+    font-size: initial;
+    font-weight: bold;
+  }
+  .edit-btn{
+    color:black;
+  }
+  .add-btn{
+    width:100%;
+    color:black;
+  }
+.card-list{
+  width: 95%;
+  height: 95%;
+  margin: 2%;
+  overflow: auto;
+  display: grid;  
+  grid-template-columns: 400px 400px 400px;  
+  grid-template-rows: 200px 200px; 
+}
+
+.add-input{
+  padding: 0px;
+    width: 55%;
+    outline: none;
+    border: 1px solid #bbb;
+    border-radius: 20px;
+}
+
+.header-fixed{
+
+position: sticky;
+top: 0;
+/*     z-index: 1; */
+background: #b78e8e;
+height: 50px;
+font-size:x-large;
+line-height: 47px;
+}
